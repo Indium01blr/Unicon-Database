@@ -1,0 +1,21 @@
+CREATE TABLE `stock_user` (
+  `ID` int NOT NULL,
+  `Name` varchar(45) DEFAULT NULL,
+  `Created` datetime DEFAULT NULL,
+  `Updated` datetime DEFAULT NULL,
+  `Deleted` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `user_transaction` (
+  `ID` int NOT NULL,
+  `User_ID` varchar(45) DEFAULT NULL,
+  `Stock_ID` varchar(45) DEFAULT NULL,
+  `Purchase_Price` varchar(45) DEFAULT NULL,
+  `Created` datetime DEFAULT NULL,
+  `Updated` datetime DEFAULT NULL,
+  `Test` varchar(45) DEFAULT NULL,
+  `isbuy` tinyint DEFAULT NULL,
+  `Deleted` datetime DEFAULT NULL,
+  `Quantity` int DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
