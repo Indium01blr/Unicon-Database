@@ -1,3 +1,13 @@
+INSERT INTO sys.user (name, funds, created, updated, deleted) 
+VALUES ('Popeye', 20000, '2014-01-02', null, null);
+INSERT INTO sys.user (name, funds, created, updated, deleted) 
+VALUES ('Mickey', 20000, '2014-01-02', null, null);
+INSERT INTO sys.user (name, funds, created, updated, deleted) 
+VALUES ('Tom', 20000, '2014-01-02', null, null);
+INSERT INTO sys.user (name, funds, created, updated, deleted) 
+VALUES ('Jerry', 20000, '2014-01-02', null, null);
+
+
 INSERT INTO sys.stocks (name, created, updated, deleted) 
 VALUES ('TATASTEEL', '2014-01-02', null, null),
  ('RELGENINS', '2014-01-02', null, null),
@@ -65,22 +75,23 @@ VALUES (1, 250, '2014-01-02', null, null),
  (10, 7252, '2014-01-02', null, null),
  (10, 7256, '2014-01-02', null, null),
  (10, 7255, '2014-01-02', null, null);
- 
- 
-INSERT INTO sys.user (name, funds, created, updated, deleted) 
-VALUES ('Popeye', 20000, '2014-01-02', null, null),
-VALUES ('Mickey', 20000, '2014-01-02', null, null),
-VALUES ('Tom', 20000, '2014-01-02', null, null),
-VALUES ('Jerry', 20000, '2014-01-02', null, null);
 
 
-
-INSERT INTO sys.user (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
-VALUES (1, 1, 250, 2, TRUE, '2014-01-02', null, null),
-VALUES (1, 2, 56, 2, TRUE, '2014-01-03', null, null),
-VALUES (1, 2, 57, 2, TRUE, '2014-01-06', null, null),
-VALUES (1, 2, 58, 2, TRUE, '2014-01-07', null, null),
-VALUES (1, 2, 59, 1, TRUE, '2014-02-03', null, null),
-VALUES (1, 2, 56, 2, TRUE, '2014-02-07', null, null),
-VALUES (1, 2, 56, 2, TRUE, '2014-02-09', null, null),
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
+VALUES (1, 1, 250, 2, TRUE, '2014-01-02', null, null);
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
+VALUES (1, 2, 56, 2, TRUE, '2014-01-03', null, null);
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
+VALUES (1, 2, 57, 2, TRUE, '2014-01-06', null, null);
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
+VALUES (1, 2, 58, 2, TRUE, '2014-01-07', null, null);
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
+VALUES (1, 2, 59, 1, TRUE, '2014-02-03', null, null);
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
+VALUES (1, 2, 56, 2, TRUE, '2014-02-07', null, null);
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
+VALUES (1, 2, 56, 2, TRUE, '2014-02-09', null, null);
+INSERT INTO sys.usertransactions (user_id, stocks_id, price, quantity, isbuy, created, updated, deleted) 
 VALUES (1, 2, 56, 2, TRUE, '2014-04-02', null, null);
+
+COMMIT;
